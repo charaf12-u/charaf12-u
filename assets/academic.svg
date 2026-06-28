@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="100%" height="100%">
+  <defs>
+    <style>
+      .card-bg {
+        fill: #0d1117;
+        stroke: #30363d;
+        stroke-width: 1.5;
+        rx: 8px;
+        ry: 8px;
+      }
+      .card-header {
+        fill: #161b22;
+        rx: 8px;
+        ry: 8px;
+      }
+      .header-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #ffffff;
+      }
+      .header-meta {
+        font-family: 'SF Mono', 'Fira Code', monospace;
+        font-size: 11px;
+        fill: #8b949e;
+      }
+      .timeline-line {
+        stroke: #30363d;
+        stroke-width: 2;
+      }
+      .timeline-node {
+        fill: #0d1117;
+        stroke: #00ff66;
+        stroke-width: 2.5;
+      }
+      .node-year {
+        font-family: 'SF Mono', 'Fira Code', monospace;
+        font-weight: bold;
+        font-size: 12px;
+        fill: #00f0ff;
+      }
+      .node-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #ffffff;
+      }
+      .node-desc {
+        font-family: 'SF Mono', 'Fira Code', monospace;
+        font-size: 11px;
+        fill: #8b949e;
+      }
+    </style>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="100%" height="100%" class="card-bg"/>
+
+  <!-- Card Header -->
+  <path d="M 1.5 18 A 6.5 6.5 0 0 1 8 1.5 L 792 1.5 A 6.5 6.5 0 0 1 798.5 8 L 798.5 40 L 1.5 40 Z" class="card-header"/>
+  <text x="25" y="25" class="header-title">CREDENTIALS_VERIFICATION // ACADEMIC_TIMELINE</text>
+  <text x="775" y="25" text-anchor="end" class="header-meta">TIMELINE: LINEAR_TRACK</text>
+
+  <!-- Vertical Timeline Line -->
+  <line x1="160" y1="60" x2="160" y2="320" class="timeline-line" />
+
+  <!-- Node 1: Licence ID (2025 - Present) -->
+  <g transform="translate(0, 70)">
+    <text x="140" y="8" text-anchor="end" class="node-year">2025 - PRES</text>
+    <circle cx="160" cy="4" r="5.5" class="timeline-node" />
+    <text x="180" y="0" class="node-title">Licence en Informatique Décisionnelle</text>
+    <text x="180" y="16" class="node-desc">Subtech — Fquih Ben Salah</text>
+  </g>
+
+  <!-- Node 2: Cyber (2025 - Present) -->
+  <g transform="translate(0, 125)">
+    <text x="140" y="8" text-anchor="end" class="node-year">2025 - PRES</text>
+    <circle cx="160" cy="4" r="5.5" class="timeline-node" />
+    <text x="180" y="0" class="node-title">Formation en Analyste Cybersécurité</text>
+    <text x="180" y="16" class="node-desc">Jobentech — Fquih Ben Salah</text>
+  </g>
+
+  <!-- Node 3: Data Analyst (2026 - Present) -->
+  <g transform="translate(0, 180)">
+    <text x="140" y="8" text-anchor="end" class="node-year">2026 - PRES</text>
+    <circle cx="160" cy="4" r="5.5" class="timeline-node" />
+    <text x="180" y="0" class="node-title">Formation en Data Analyst</text>
+    <text x="180" y="16" class="node-desc">Centre Coding — Fquih Ben Salah</text>
+  </g>
+
+  <!-- Node 4: TS Mobile (2023 - 2025) -->
+  <g transform="translate(0, 235)">
+    <text x="140" y="8" text-anchor="end" class="node-year">2023 - 2025</text>
+    <circle cx="160" cy="4" r="5.5" class="timeline-node" />
+    <text x="180" y="0" class="node-title">Technicien Spécialisé en Développement Digital (Applications Mobiles)</text>
+    <text x="180" y="16" class="node-desc">ISTA NTIC — Béni Mellal</text>
+  </g>
+
+  <!-- Node 5: Physics Bac (2022 - 2023) -->
+  <g transform="translate(0, 290)">
+    <text x="140" y="8" text-anchor="end" class="node-year">2022 - 2023</text>
+    <circle cx="160" cy="4" r="5.5" class="timeline-node" />
+    <text x="180" y="0" class="node-title">Baccalauréat en Sciences Physiques</text>
+    <text x="180" y="16" class="node-desc">30 Juillet — Souk Sebt</text>
+  </g>
+</svg>

@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="100%">
+  <defs>
+    <style>
+      .card-bg {
+        fill: #0d1117;
+        stroke: #30363d;
+        stroke-width: 1.5;
+        rx: 8px;
+        ry: 8px;
+      }
+      .card-header {
+        fill: #161b22;
+        rx: 8px;
+        ry: 8px;
+      }
+      .header-title {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #ffffff;
+      }
+      .header-meta {
+        font-family: 'SF Mono', 'Fira Code', monospace;
+        font-size: 11px;
+        fill: #8b949e;
+      }
+      .domain-title {
+        font-family: 'SF Mono', 'Fira Code', monospace;
+        font-weight: bold;
+        font-size: 13px;
+        fill: #00ff66;
+        letter-spacing: 1px;
+      }
+      .skill-text {
+        font-family: 'SF Mono', 'Fira Code', 'Segoe UI Mono', monospace;
+        font-size: 12px;
+        fill: #c9d1d9;
+      }
+      .bullet {
+        fill: #00f0ff;
+      }
+      .divider {
+        stroke: #21262d;
+        stroke-width: 1;
+      }
+    </g>
+  </defs>
+
+  <!-- Card Background -->
+  <rect width="100%" height="100%" class="card-bg"/>
+
+  <!-- Card Header -->
+  <path d="M 1.5 18 A 6.5 6.5 0 0 1 8 1.5 L 792 1.5 A 6.5 6.5 0 0 1 798.5 8 L 798.5 40 L 1.5 40 Z" class="card-header"/>
+  <text x="25" y="25" class="header-title">SYSTEM_CAPABILITIES // SKILLS_MATRIX</text>
+  <text x="775" y="25" text-anchor="end" class="header-meta">STATUS: ACTIVE_MATRIX</text>
+
+  <!-- Divider lines to split into 4 quadrant blocks -->
+  <line x1="400" y1="40" x2="400" y2="320" class="divider" />
+  <line x1="0" y1="180" x2="800" y2="180" class="divider" />
+
+  <!-- Quadrant 1: Cybersecurity (Top Left) -->
+  <g transform="translate(35, 60)">
+    <text x="0" y="15" class="domain-title">🔐 CYBERSECURITY</text>
+    
+    <circle cx="5" cy="40" r="3.5" class="bullet" />
+    <text x="20" y="44" class="skill-text">Defensive security auditing &amp; monitoring</text>
+    
+    <circle cx="5" cy="65" r="3.5" class="bullet" />
+    <text x="20" y="69" class="skill-text">Vulnerability scanning (Nmap, Wireshark)</text>
+    
+    <circle cx="5" cy="90" r="3.5" class="bullet" />
+    <text x="20" y="94" class="skill-text">Network mapping (Cisco Packet Tracer)</text>
+  </g>
+
+  <!-- Quadrant 2: Data Analytics & BI (Top Right) -->
+  <g transform="translate(435, 60)">
+    <text x="0" y="15" class="domain-title">📊 DATA ANALYTICS &amp; BI</text>
+    
+    <circle cx="5" cy="40" r="3.5" class="bullet" />
+    <text x="20" y="44" class="skill-text">PostgreSQL relational modeling (3NF Schema)</text>
+    
+    <circle cx="5" cy="65" r="3.5" class="bullet" />
+    <text x="20" y="69" class="skill-text">ETL data pipeline engineering (Pandas, NumPy)</text>
+    
+    <circle cx="5" cy="90" r="3.5" class="bullet" />
+    <text x="20" y="94" class="skill-text">BI dashboard reporting (Streamlit, SQL)</text>
+  </g>
+
+  <!-- Quadrant 3: Mobile Development (Bottom Left) -->
+  <g transform="translate(35, 200)">
+    <text x="0" y="15" class="domain-title">📱 MOBILE DEVELOPMENT</text>
+    
+    <circle cx="5" cy="40" r="3.5" class="bullet" />
+    <text x="20" y="44" class="skill-text">Cross-platform development (Flutter, Dart)</text>
+    
+    <circle cx="5" cy="65" r="3.5" class="bullet" />
+    <text x="20" y="69" class="skill-text">Local database ingestion (SQLite CRUD)</text>
+    
+    <circle cx="5" cy="90" r="3.5" class="bullet" />
+    <text x="20" y="94" class="skill-text">Native IDE environments (Android Studio)</text>
+  </g>
+
+  <!-- Quadrant 4: Web Development (Bottom Right) -->
+  <g transform="translate(435, 200)">
+    <text x="0" y="15" class="domain-title">💻 WEB DEVELOPMENT</text>
+    
+    <circle cx="5" cy="40" r="3.5" class="bullet" />
+    <text x="20" y="44" class="skill-text">Backend MVC frameworks (PHP, Laravel)</text>
+    
+    <circle cx="5" cy="65" r="3.5" class="bullet" />
+    <text x="20" y="69" class="skill-text">Frontend structures (HTML5, Vanilla CSS, JS)</text>
+    
+    <circle cx="5" cy="90" r="3.5" class="bullet" />
+    <text x="20" y="94" class="skill-text">Design visual assets (Figma, Blender 3D)</text>
+  </g>
+</svg>

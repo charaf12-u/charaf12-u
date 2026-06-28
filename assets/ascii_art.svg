@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="100%" height="100%">
+  <defs>
+    <!-- Sharp Professional Font Styles -->
+    <style>
+      .logo-title {
+        font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 42px;
+        fill: #ffffff;
+        letter-spacing: 5px;
+      }
+      .logo-subtitle {
+        font-family: 'SF Mono', 'Fira Code', 'Segoe UI Mono', 'Roboto Mono', monospace;
+        font-weight: 600;
+        font-size: 13px;
+        fill: #8b949e;
+        letter-spacing: 5px;
+      }
+      .tech-spec {
+        font-family: 'SF Mono', 'Fira Code', 'Segoe UI Mono', monospace;
+        font-size: 11px;
+        fill: #30363d;
+      }
+      .hud-text {
+        font-family: 'SF Mono', 'Fira Code', 'Segoe UI Mono', monospace;
+        font-size: 11px;
+        font-weight: bold;
+        fill: #00f0ff;
+      }
+    </style>
+
+    <!-- Linear Gradients -->
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff" />
+      <stop offset="50%" stop-color="#7000ff" />
+      <stop offset="100%" stop-color="#00ff66" />
+    </linearGradient>
+  </defs>
+
+  <!-- GitHub Dark Theme Background -->
+  <rect width="100%" height="100%" fill="#0d1117" />
+
+  <!-- Subtle Digital Coordinate Grid -->
+  <g stroke="#161b22" stroke-width="1">
+    <line x1="40" y1="0" x2="40" y2="200" />
+    <line x1="120" y1="0" x2="120" y2="200" stroke-opacity="0.3" />
+    <line x1="200" y1="0" x2="200" y2="200" stroke-opacity="0.3" />
+    <line x1="600" y1="0" x2="600" y2="200" stroke-opacity="0.3" />
+    <line x1="680" y1="0" x2="680" y2="200" stroke-opacity="0.3" />
+    <line x1="760" y1="0" x2="760" y2="200" />
+    
+    <line x1="0" y1="40" x2="800" y2="40" />
+    <line x1="0" y1="100" x2="800" y2="100" stroke-opacity="0.3" />
+    <line x1="0" y1="160" x2="800" y2="160" />
+  </g>
+
+  <!-- Technical HUD accents -->
+  <rect x="40" y="40" width="720" height="120" fill="none" stroke="#21262d" stroke-width="1" />
+  <circle cx="40" cy="40" r="3" fill="#00f0ff" />
+  <circle cx="760" cy="40" r="3" fill="#00ff66" />
+  <circle cx="40" cy="160" r="3" fill="#7000ff" />
+  <circle cx="760" cy="160" r="3" fill="#00f0ff" />
+
+  <!-- Tech Details on the borders -->
+  <text x="50" y="55" class="tech-spec">SYS_SEC // ROOT_INIT</text>
+  <text x="750" y="55" class="tech-spec" text-anchor="end">LOC: 32.3394° N, 6.3608° W</text>
+  <text x="50" y="152" class="tech-spec">PORTFOLIO_VER // 2.5.0</text>
+  <text x="750" y="152" class="tech-spec" text-anchor="end">STATUS: OPERATION_READY</text>
+
+  <!-- Name & Titles -->
+  <g transform="translate(400, 95)">
+    <!-- Decorative brackets -->
+    <path d="M -260 -25 L -280 -25 L -280 35 L -260 35" fill="none" stroke="#21262d" stroke-width="2" />
+    <path d="M 260 -25 L 280 -25 L 280 35 L 260 35" fill="none" stroke="#21262d" stroke-width="2" />
+    
+    <!-- Binary Stream Segment inside brackets -->
+    <rect x="-278" y="2" width="4" height="8" fill="#00f0ff" />
+    <rect x="274" y="2" width="4" height="8" fill="#00ff66" />
+
+    <!-- Sharp Modern Typography Logo -->
+    <text x="0" y="5" text-anchor="middle" class="logo-title">CHARAF SOUBI</text>
+    
+    <!-- Minimalist Subtitle covering all 4 domains -->
+    <text x="0" y="38" text-anchor="middle" class="logo-subtitle">CYBERSECURITY | DATA ANALYTICS | WEB &amp; MOBILE</text>
+  </g>
+
+  <!-- Bottom Accent Bar -->
+  <rect x="240" y="159" width="320" height="2" fill="url(#accent-grad)" />
+</svg>

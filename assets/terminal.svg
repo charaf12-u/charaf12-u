@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="100%">
+  <defs>
+    <style>
+      .terminal-bg {
+        fill: #0d1117;
+        stroke: #30363d;
+        stroke-width: 1.5;
+        rx: 8px;
+        ry: 8px;
+      }
+      .header-bg {
+        fill: #161b22;
+        rx: 8px;
+        ry: 8px;
+      }
+      .header-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 13px;
+        fill: #8b949e;
+      }
+      .console-text {
+        font-family: 'SF Mono', 'Fira Code', 'Segoe UI Mono', 'Roboto Mono', 'Courier New', monospace;
+        font-size: 13px;
+        line-height: 24px;
+      }
+      .comment {
+        fill: #6a737d;
+      }
+      .prompt {
+        fill: #58a6ff;
+      }
+      .command {
+        fill: #ffffff;
+      }
+      .output-info {
+        fill: #c9d1d9;
+      }
+      .output-highlight {
+        fill: #00ff66;
+      }
+      .output-ok {
+        fill: #56e39f;
+      }
+    </style>
+  </defs>
+
+  <!-- Terminal Window Shadow & Background -->
+  <rect width="100%" height="100%" class="terminal-bg" />
+
+  <!-- Terminal Header -->
+  <path d="M 1.5 18 A 6.5 6.5 0 0 1 8 1.5 L 792 1.5 A 6.5 6.5 0 0 1 798.5 8 L 798.5 40 L 1.5 40 Z" class="header-bg"/>
+
+  <!-- macOS Window controls -->
+  <circle cx="25" cy="20" r="6" fill="#ff5f56" />
+  <circle cx="45" cy="20" r="6" fill="#ffbd2e" />
+  <circle cx="65" cy="20" r="6" fill="#27c93f" />
+
+  <!-- Header Title -->
+  <text x="400" y="25" text-anchor="middle" class="header-text">bash - Profile Information Query</text>
+
+  <!-- Command Line Interface Body -->
+  <g class="console-text" transform="translate(25, 45)">
+    <!-- Line 1: Comment -->
+    <text x="0" y="30" class="comment"># Query active user profile</text>
+    
+    <!-- Line 2: whoami -->
+    <text x="0" y="55" class="prompt">user@charaf-sec:~$</text>
+    <text x="145" y="55" class="command"> whoami</text>
+    
+    <!-- Line 3: output whoami -->
+    <text x="0" y="80" class="output-highlight">soubi_charaf</text>
+    
+    <!-- Line 4: cat specialization -->
+    <text x="0" y="105" class="prompt">user@charaf-sec:~$</text>
+    <text x="145" y="105" class="command"> cat specialization.json</text>
+
+    <!-- Line 5: JSON Output including all 4 domains -->
+    <text x="0" y="130" class="output-info">{</text>
+    <text x="20" y="150" class="output-info">"name": "Soubi Charaf",</text>
+    <text x="20" y="170" class="output-info">"domains": ["Cybersecurity", "Data Analyst", "Web Developer", "Mobile Developer"],</text>
+    <text x="20" y="190" class="output-info">"location": "Beni Mellal, Morocco",</text>
+    <text x="20" y="210" class="output-info">"active_skills": ["PostgreSQL", "Python", "SQL", "Flutter", "SQLite", "Laravel", "Wireshark", "Nmap"]</text>
+    <text x="0" y="230" class="output-info">}</text>
+
+    <!-- Line 8: Comment -->
+    <text x="0" y="260" class="comment"># Audit communication ports</text>
+
+    <!-- Line 9: nmap command -->
+    <text x="0" y="285" class="prompt">user@charaf-sec:~$</text>
+    <text x="145" y="285" class="command"> nmap -sV localhost</text>
+
+    <!-- Line 10: Nmap output header -->
+    <text x="0" y="310" class="comment">PORT     STATE SERVICE  VERSION</text>
+    
+    <!-- Line 11: Port outputs representing active links -->
+    <text x="0" y="330" class="output-info">22/tcp   open  ssh      OpenSSH 8.4 (LinkedIn Tunnel)</text>
+    <text x="0" y="350" class="output-info">443/tcp  open  ssl/http Nginx (Secure Mail Node)</text>
+    <text x="0" y="370" class="output-info">8080/tcp open  http     Apache (WhatsApp Endpoint)</text>
+
+    <!-- Line 12: Prompt cursor -->
+    <text x="0" y="395" class="prompt">user@charaf-sec:~$</text>
+    <!-- Blinking cursor cursor mockup -->
+    <rect x="147" y="383" width="8" height="15" fill="#58a6ff">
+      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite" />
+    </rect>
+  </g>
+</svg>
