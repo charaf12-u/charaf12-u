@@ -147,5 +147,5 @@ Active host addresses configured for incoming network queries and job proposals.
 ---
 
 <div align="center">
-<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=22&pause=3000&color=00ff66&center=true&vCenter=true&width=850&lines=Built+with+PostgreSQL+SQL+Python+and+Flutter;Designed+for+Security+Audits+and+Data+Science;Béni+Mellal+Morocco"/>
+<img src="https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=22&pause=3000&color=00ff66&center=true&vCenter=true&width=850&lines=Built+with+PostgreSQL+SQL+Python+and+Flutter;Designed+for+Security+Audits+and+Data+Science;Beni+Mellal+Morocco"/>
 </div>
