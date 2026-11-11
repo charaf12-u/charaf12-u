@@ -9,8 +9,9 @@
       .cmd     { font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; font-size: 12.5px; fill: #ffffff; }
       .out     { font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; font-size: 12.5px; fill: #c9d1d9; }
       .ok      { font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; font-size: 12.5px; fill: #00ff66; }
-      .col-key { font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; font-size: 12.5px; fill: #6a737d; }
-      .venv    { font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; font-size: 12.5px; fill: #f2c811; }
+      .warn    { font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; font-size: 12.5px; fill: #f2c811; }
+      .deny    { font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; font-size: 12.5px; fill: #ff6b6b; }
+      .code    { font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; font-size: 12.5px; fill: #d2a8ff; }
     </style>
   </defs>
 
@@ -22,51 +23,49 @@
   <circle cx="25" cy="20" r="6" fill="#ff5f56"/>
   <circle cx="45" cy="20" r="6" fill="#ffbd2e"/>
   <circle cx="65" cy="20" r="6" fill="#27c93f"/>
-  <text x="400" y="25" text-anchor="middle" class="header-text">bash — Profile Information Query</text>
+  <text x="400" y="25" text-anchor="middle" class="header-text">bash — SOUBI Charaf / Secure Profile Query</text>
 
-  <!-- ── BLOCK 1: whoami ── -->
-  <text x="25" y="68"  class="comment"># Query active user profile</text>
-  <text x="25" y="92"  class="prompt">user@charaf-sec:~$</text><text x="175" y="92"  class="cmd"> whoami</text>
-  <text x="25" y="115" class="ok">soubi_charaf</text>
+  <!-- BLOCK 1 -->
+  <text x="25" y="68" class="comment"># Identify public profile owner</text>
+  <text x="25" y="92" class="prompt">user@soubi-sec:~$</text>
+  <text x="177" y="92" class="cmd"> whoami</text>
+  <text x="25" y="115" class="ok">SOUBI Charaf</text>
 
-  <!-- ── BLOCK 2: cat specialization.json ── -->
-  <text x="25" y="140" class="prompt">user@charaf-sec:~$</text><text x="175" y="140" class="cmd"> cat specialization.json</text>
-  <text x="25" y="163" class="out">{</text>
-  <text x="45" y="183" class="out">"name"    : "Soubi Charaf",</text>
-  <text x="45" y="203" class="out">"domains" : ["Cybersecurity", "Data Analyst", "Web Developer", "Mobile Developer"],</text>
-  <text x="45" y="223" class="out">"location": "Beni Mellal, Morocco",</text>
-  <text x="45" y="243" class="out">"skills"  : ["PostgreSQL","Python","SQL","Flutter","SQLite","Laravel","Wireshark","Nmap"]</text>
-  <text x="25" y="263" class="out">}</text>
+  <!-- BLOCK 2 -->
+  <text x="25" y="140" class="prompt">user@soubi-sec:~$</text>
+  <text x="177" y="140" class="cmd"> cat domain.txt</text>
+  <text x="25" y="163" class="out">[01] Data Analyst</text>
+  <text x="25" y="183" class="out">[02] Mobile Developer</text>
+  <text x="25" y="203" class="out">[03] Web Developer</text>
+  <text x="25" y="223" class="out">[04] Cybersecurity Analyst</text>
 
-  <!-- ── BLOCK 3: nmap (fully inside viewBox) ── -->
-  <text x="25" y="288" class="comment"># Audit communication ports</text>
-  <text x="25" y="310" class="prompt">user@charaf-sec:~$</text><text x="175" y="310" class="cmd"> nmap -sV localhost</text>
+  <!-- BLOCK 3 -->
+  <text x="25" y="248" class="comment"># Scan public footprint / portfolio endpoint</text>
+  <text x="25" y="270" class="prompt">user@soubi-sec:~$</text>
+  <text x="177" y="270" class="cmd"> scan --portfolio</text>
+  <text x="25" y="292" class="out">[*] Searching public profile...</text>
+  <text x="25" y="312" class="out">[*] Checking exposed information...</text>
+  <text x="25" y="332" class="ok">[+] Portfolio found:</text>
+  <text x="175" y="332" class="ok">https://soubicharaf.netlify.app/</text>
 
-  <!-- nmap column headers -->
-  <text x="25"  y="332" class="col-key">PORT</text>
-  <text x="145" y="332" class="col-key">STATE</text>
-  <text x="240" y="332" class="col-key">SERVICE</text>
-  <text x="380" y="332" class="col-key">VERSION</text>
+  <!-- BLOCK 4 -->
+  <text x="25" y="357" class="prompt">user@soubi-sec:~$</text>
+  <text x="177" y="357" class="cmd"> search --about-me</text>
+  <text x="25" y="379" class="warn">[!] Attempting to retrieve protected information...</text>
+  <text x="25" y="399" class="deny">[x] ACCESS DENIED — private data protected</text>
 
-  <!-- nmap rows -->
-  <text x="25"  y="354" class="ok">22/tcp</text>
-  <text x="145" y="354" class="out">open</text>
-  <text x="240" y="354" class="out">ssh</text>
-  <text x="380" y="354" class="out">OpenSSH 8.4  (LinkedIn Tunnel)</text>
+  <!-- BLOCK 5 -->
+  <text x="25" y="424" class="prompt">user@soubi-sec:~$</text>
+  <text x="177" y="424" class="cmd"> run --code decrypt_contact.py</text>
 
-  <text x="25"  y="375" class="ok">443/tcp</text>
-  <text x="145" y="375" class="out">open</text>
-  <text x="240" y="375" class="out">ssl/https</text>
-  <text x="380" y="375" class="out">Nginx  (Secure Mail Node)</text>
+  <text x="25" y="444" class="code">[*] Executing challenge...</text>
+  <text x="225" y="444" class="out">████████████████████ 100%</text>
 
-  <text x="25"  y="396" class="ok">8080/tcp</text>
-  <text x="145" y="396" class="out">open</text>
-  <text x="240" y="396" class="out">http</text>
-  <text x="380" y="396" class="out">Apache (WhatsApp Endpoint)</text>
+  <text x="25" y="463" class="ok">[+] DECRYPTED:</text>
+  <text x="130" y="463" class="ok">soubicharaf@gmail.com</text>
 
-  <!-- ── Final prompt + blinking cursor ── -->
-  <text x="25" y="440" class="prompt">user@charaf-sec:~$</text>
-  <rect x="177" y="427" width="8" height="15" fill="#58a6ff">
+  <!-- Cursor -->
+  <rect x="320" y="449" width="7" height="15" fill="#58a6ff">
     <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
   </rect>
 </svg>
